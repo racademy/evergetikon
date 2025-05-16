@@ -1,0 +1,135 @@
+.featured-slider {
+    &:hover {
+        .splide {
+            &__arrows {
+                opacity: 1;
+            }
+        }
+    }
+
+    .slide-overlay {
+        position: relative;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 32px 24px;
+        width: 100%;
+
+        .title {
+            display: block;
+            margin-bottom: 12px;
+        }
+    }
+
+    .splide {
+        &__slide {
+            overflow: hidden;
+            position: relative;
+
+            a {
+                &:hover {
+                    color: #fff;
+
+                    .theme-buttons {
+                        &__neutral {
+                            border-bottom-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            .theme-buttons {
+                &__neutral {
+                    border-bottom: 1px solid var(--white);
+                }
+            }
+        }
+
+        &__arrows {
+            opacity: 0;
+        }
+
+        &__arrow {
+            width: 48px;
+            height: 48px;
+            background: var(--black);
+            color: var(--white);
+            opacity: 1;
+            font-size: 28px;
+
+            &--next {
+                right: -28px;
+
+                &:disabled {
+                    opacity: 0.3;
+                }
+            }
+
+            &--prev {
+                left: -28px;
+
+                &:disabled {
+                    opacity: 0.3;
+                }
+            }
+
+            svg {
+                fill: var(--white);
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+.slide-inner {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+
+.slide-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+@media (hover: hover) {
+    .slide-inner:hover .slide-bg {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 1440px) {
+    .featured-slider {
+        .splide {
+            &__arrow {
+                &--next {
+                    right: 10px;
+
+                    &:disabled {
+                        opacity: 0.3;
+                    }
+                }
+
+                &--prev {
+                    left: 10px;
+
+                    &:disabled {
+                        opacity: 0.3;
+                    }
+                }
+            }
+
+            &__pagination {
+                padding: 0 15px;
+            }
+        }
+    }
+}

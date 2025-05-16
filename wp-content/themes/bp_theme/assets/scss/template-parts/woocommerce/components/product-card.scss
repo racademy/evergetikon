@@ -1,0 +1,72 @@
+.woocommerce {
+    position: relative;
+
+    .product-card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        padding: 12px;
+
+        &__image-wrapper {
+            height: 160px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-top: 30px;
+            margin-bottom: 12px;
+            text-decoration: unset;
+
+            .caption_s {
+                text-transform: uppercase;
+                color: var(--black_60);
+            }
+
+            img {
+                height: 160px !important;
+                max-width: 100%;
+                object-fit: contain;
+                transition: transform 0.5s ease-in-out;
+            }
+        }
+    }
+
+    span.yith-wcwl-add-to-wishlist-button__label {
+        display: none;
+    }
+
+    .yith-add-to-wishlist-button-block {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--white);
+        margin: 0;
+    }
+
+    .yith-wcwl-add-to-wishlist-button svg {
+        width: 20px !important;
+        height: 20px;
+    }
+
+    .badge-new {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background: var(--accent_sand);
+        text-transform: uppercase;
+        color: #fff;
+        padding: 6px 8px 7px 8px;
+        z-index: 10;
+    }
+}

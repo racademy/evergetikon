@@ -1,0 +1,240 @@
+.woof_container_inner_produktokategorijos .iradio_square-blue {
+    display: none !important;
+}
+
+.woocommerce {
+    .splide--main {
+        .splide__slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .splide {
+            &__arrow {
+                background-color: transparent;
+            }
+
+            &__pagination {
+                gap: 16px;
+
+                &__page {
+                    background: #f4f4f4;
+                    height: 10px;
+                    margin: 0;
+                    opacity: 1;
+                    padding: 0;
+                    width: 10px;
+                }
+
+                &__page.is-active {
+                    background: var(--accent_sand);
+                    transform: none;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    #thumbnail-slider {
+        max-height: 400px;
+        width: 100px;
+        margin-right: 10px;
+
+        li {
+            border: 1px solid #e6e6e6;
+            img {
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    #thumbnail-slider .splide__slide {
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .single-product-section {
+        &__left {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
+        }
+    }
+
+    .splide {
+        &--main {
+            width: 100%;
+            height: fit-content;
+        }
+    }
+
+    /* About roduct */
+    .timeline-section-product {
+        position: relative;
+        padding: 0;
+    }
+
+    .timeline-line {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #f9f6ef;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .timeline-block {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        .caption_l {
+            color: var(--accent_sand);
+        }
+    }
+
+    .timeline-block.left .timeline-content {
+        flex-direction: row-reverse;
+        background: #f6f4ef;
+
+        .timeline-text {
+            flex: 1;
+
+            &__holder {
+                padding: 96px 72px 96px 96px;
+            }
+        }
+    }
+
+    .timeline-block.right .timeline-content {
+        flex-direction: row;
+        background: var(--white);
+
+        .timeline-text {
+            flex: 1;
+
+            &__holder {
+                padding: 96px 96px 96px 72px;
+            }
+        }
+    }
+
+    .timeline-content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .timeline-image {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .timeline-image img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+    border: 1px solid #000 !important;
+}
+
+.lb-details {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .woocommerce {
+        .timeline-block.left {
+            .timeline-content {
+                .timeline-text {
+                    &__holder {
+                        padding: 48px 36px 48px 48px;
+                    }
+                }
+            }
+        }
+
+        .timeline-block.right {
+            .timeline-content {
+                .timeline-text {
+                    &__holder {
+                        padding: 48px 48px 48px 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .woocommerce {
+        .timeline-block.left {
+            .timeline-content {
+                flex-direction: column;
+            }
+        }
+
+        .timeline-block.right {
+            .timeline-content {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .timeline-image img {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 500px) {
+    .woocommerce {
+        .timeline-block.left {
+            .timeline-content {
+                .timeline-text {
+                    &__holder {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .timeline-block.right {
+            .timeline-content {
+                .timeline-text {
+                    &__holder {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .timeline-image {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+}

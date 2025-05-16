@@ -1,0 +1,47 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: "Mulish";
+  max-width: 1920px;
+}
+
+.container,
+.wp-block-woocommerce-cart,
+.wp-block-woocommerce-checkout,
+.woocommerce-account > .woocommerce,
+.woocommerce > form#yith-wcwl-form {
+  max-width: 1296px;
+  margin: auto !important;
+  padding: 0;
+}
+.woocommerce-wishlist #breadcrumbs {
+  display: none;
+}
+
+.woocommerce-account {
+  #breadcrumbs {
+    display: none;
+  }
+}
+
+section {
+  padding: 96px 0;
+}
+
+.wp-block-woocommerce-cart {
+  padding-top: 60px !important;
+}
+
+@media (max-width: 1440px) {
+  .container,
+  .wp-block-woocommerce-cart,
+  .wp-block-woocommerce-checkout,
+  .woocommerce-account > .woocommerce,
+  .woocommerce > form#yith-wcwl-form {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,404 @@
+footer {
+    background: var(--primary_green);
+    padding: 64px 0 40px 0;
+    color: var(--white);
+
+    .site-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .footer-top {
+            padding-bottom: 64px;
+            border-bottom: 1px solid #ffffff1a;
+
+            &__inner {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                &--discount-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+                &--form {
+                    .tnp.tnp-subscription form {
+                        display: flex;
+
+                        input#tnp-1 {
+                            height: 48px;
+                            background-color: transparent;
+                            color: var(--white);
+                            padding: 18px 0;
+                            border-bottom: 1px solid var(--white);
+                            width: 330px;
+
+                            &::placeholder {
+                                color: var(--white);
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 120%;
+                                text-transform: uppercase;
+                                opacity: 0.8;
+                            }
+                        }
+
+                        .tnp-field.tnp-field-button .tnp-submit {
+                            height: 49px;
+                            min-width: 200px;
+                            text-transform: uppercase;
+                            color: var(--black);
+                            background-color: var(--accent_sand);
+                            cursor: pointer;
+                        }
+                    }
+
+                    div.tnp-subscription,
+                    form.tnp-subscription,
+                    form.tnp-profile {
+                        max-width: unset;
+                    }
+                }
+            }
+        }
+
+        .footer-middle {
+            &__inner {
+                display: flex;
+                flex-direction: row;
+                gap: 32px;
+
+                &--menu {
+                    width: 75%;
+
+                    ul#menu-footer-menu {
+                        display: flex;
+                        flex-direction: row;
+
+                        .menu-item-has-children {
+                            width: 33%;
+                        }
+
+                        .menu-item-has-children > a {
+                            display: block;
+                            font-size: 16px;
+                            line-height: 160%;
+                            font-weight: 600;
+                            margin-bottom: 16px;
+                        }
+
+                        .sub-menu {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px;
+
+                            a {
+                                font-size: 16px;
+                                line-height: 160%;
+                                font-weight: 300;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                &--company-details {
+                    width: 25%;
+
+                    ul.company-info-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .body_one_semibold {
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            padding: 12px 0;
+            border-top: 1px solid #ffffff1a;
+
+            &__inner {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                &--social-media {
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+
+                    ul.social-media-list {
+                        display: flex;
+                        gap: 30px;
+                    }
+
+                    .copyright {
+                        font-size: 14px;
+                    }
+                }
+
+                &--created-by-payments {
+                    display: flex;
+                    text-transform: uppercase;
+                    gap: 40px;
+                    align-items: center;
+
+                    .created-by {
+                        font-size: 14px;
+                    }
+
+                    ul.payment-icons {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 30px;
+
+                        li {
+                            max-width: 55px;
+                            max-height: 34px;
+                            padding: 4px 9px;
+                            background-color: var(--white);
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.custom-success-msg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--accent_sand);
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px #000;
+    z-index: 9999;
+    text-align: center;
+    max-width: 90%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.custom-success-msg.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.custom-success-msg .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    footer {
+        .site-footer {
+            .footer-top {
+                padding-bottom: 30px;
+
+                &__inner {
+                    &--form {
+                        width: 100%;
+
+                        .tnp.tnp-subscription form {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                    &--discount-info {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    footer {
+        padding: 44px 0 20px 0;
+
+        .site-footer {
+            .footer-bottom {
+                &__inner {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        .site-footer {
+            .footer-middle {
+                &__inner {
+                    flex-wrap: wrap;
+
+                    &--company-details {
+                        width: 33%;
+                    }
+
+                    &--menu {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        .site-footer {
+            .footer-bottom {
+                &__inner {
+                    &--social-media {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .footer-top {
+                &__inner {
+                    &--form {
+                        .tnp.tnp-subscription form {
+                            display: flex;
+
+                            input#tnp-1 {
+                                width: 240px;
+                            }
+                        }
+
+                        .tnp.tnp-subscription form .tnp-field.tnp-field-button .tnp-submit {
+                            min-width: auto;
+                        }
+                    }
+                }
+            }
+
+            .footer-middle {
+                &__inner {
+                    &--company-details {
+                        width: 100%;
+                    }
+                }
+
+                &__inner--menu {
+                    ul#menu-footer-menu {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 1%;
+
+                        .menu-item-has-children {
+                            width: 49%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        .site-footer {
+            .footer-bottom {
+                &__inner {
+                    &--social-media {
+                        .copyright {
+                            font-size: 12px;
+                        }
+                    }
+
+                    &--created-by-payments {
+                        .created-by {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        .site-footer {
+            .footer-top {
+                &__inner {
+                    &--form {
+                        .tnp.tnp-subscription form {
+                            input#tnp-1 {
+                                width: 200px;
+
+                                &::placeholder {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        .tnp-field.tnp-field-button .tnp-submit {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .footer-bottom {
+                &__inner {
+                    &--created-by-payments {
+                        display: flex;
+                        text-transform: uppercase;
+                        gap: 0px;
+                        align-items: center;
+                        flex-direction: column-reverse;
+                    }
+                }
+            }
+        }
+    }
+}

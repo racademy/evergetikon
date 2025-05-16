@@ -1,0 +1,35 @@
+.not-found {
+  position: relative;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 836px;
+    margin: auto;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .vector-bg-not-found {
+    background-image: url("/wp-content/uploads/2025/04/Vector.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 59%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+    pointer-events: none;
+  }
+}

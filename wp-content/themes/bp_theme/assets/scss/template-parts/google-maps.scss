@@ -1,0 +1,14 @@
+.google-map {
+    height: 600px;
+    overflow: hidden;
+
+    &__iframe {
+        margin-top: -150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .google-map {
+        height: 500px;
+    }
+}

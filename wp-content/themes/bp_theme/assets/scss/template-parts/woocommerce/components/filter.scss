@@ -1,0 +1,140 @@
+.category-filter {
+    border-bottom: 1px solid var(--black_20);
+    padding-bottom: 32px;
+
+    .caption_l {
+        display: block;
+        margin-bottom: 28px;
+    }
+
+    .shop-category-grid,
+    .shop-subcategory-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        a {
+            display: block;
+            width: 100%;
+            padding: 0 32px;
+
+            &:hover {
+                color: var(--accent_sand);
+            }
+        }
+    }
+}
+
+.price-filter {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border-bottom: 1px solid var(--black_20);
+}
+
+h2.widgettitle {
+    display: none;
+}
+
+.woocommerce .widget_price_filter .ui-slider {
+    .ui-slider-range {
+        background-color: var(--accent_sand);
+    }
+    .ui-slider-handle {
+        background-color: var(--accent_sand);
+        border-color: var(--white);
+    }
+}
+
+.woof_price_search_container form .price_slider_wrapper input[type="text"] {
+    display: block !important;
+    max-width: 15%;
+    margin-right: 3px;
+    box-shadow: none;
+    padding: 10px 14px;
+    background: transparent;
+    border: 1px solid var(--black_20);
+    border-radius: 4px;
+    font-family: "Mulish";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.price_slider_amount {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .price_label {
+        display: none !important;
+    }
+
+    .clear {
+        display: none;
+    }
+
+    button {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.woof_container_inner h4 {
+    margin-bottom: 28px;
+    font-family: "Mulish";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.woof_container {
+    padding-bottom: 28px;
+    margin-bottom: 16px;
+}
+
+.woof_price_search_container.woof_container.woof_price_filter.woof_fs_by_price {
+    border-bottom: 1px solid var(--black_20);
+}
+
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+    background-color: var(--white);
+    width: 100%;
+    border-radius: unset;
+}
+
+label.woof_checkbox_label {
+    font-family: "Mulish";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+button.button.woof_reset_search_form {
+    width: 100%;
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding: 18px 0;
+    border-radius: 4px;
+    background: var(--accent_sand);
+    color: var(--black);
+}
+
+.shop-subcategory-header a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+
+    &:hover {
+        color: var(--accent_sand);
+    }
+}

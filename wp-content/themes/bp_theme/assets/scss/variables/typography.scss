@@ -1,0 +1,156 @@
+h1,
+.h1_extra {
+    font-family: var(--main-font);
+    font-size: 36px;
+    line-height: 120%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: 300;
+    margin: 0;
+}
+
+button {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 400;
+    margin: 0;
+}
+
+.body_one_light {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 300;
+    margin: 0;
+}
+
+.body_one_light_180 {
+    font-size: 16px;
+    line-height: 180%;
+    font-weight: 300;
+    margin: 0;
+}
+
+.body_one_regular {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+    margin: 0;
+}
+
+.body_one_semibold {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 600;
+    margin: 0;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitle_s_light {
+    font-size: 18px;
+    line-height: 170%;
+    font-weight: 300;
+    margin: 0;
+}
+
+.subtitle_m_light {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.caption_s {
+    font-size: 10px;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+}
+
+.caption_m {
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 600;
+    margin: 0;
+}
+
+.caption_l {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 600;
+    margin: 0;
+}
+
+.h2_alternative {
+    font-family: var(--main-font);
+    font-size: 28px;
+    line-height: 140%;
+    margin: 0;
+}
+
+.body_two_light {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 300;
+    margin: 0;
+}
+
+.body_two_regular {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+}
+
+.body_two_regular_caps {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.signature {
+    font-family: "Allura";
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px !important;
+    }
+
+    .h1_extra {
+        font-size: 30px !important;
+    }
+
+    .subtitle_m_light {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px !important;
+    }
+    h2 {
+        font-size: 24px !important;
+    }
+}
+@media (max-width: 500px) {
+    h2 {
+        font-size: 22px !important;
+    }
+}

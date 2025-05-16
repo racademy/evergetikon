@@ -1,0 +1,39 @@
+.shop-add {
+  padding: 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--primary_green);
+    max-height: 220px;
+  }
+
+  &__content {
+    flex: 1;
+    max-width: 486px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    padding-left: 40px;
+    color: #fff;
+  }
+
+  &__image {
+    flex: 1;
+    min-width: 250px;
+    text-align: right;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .theme-buttons {
+    &__neutral {
+      border-bottom: 1px solid var(--white);
+    }
+  }
+}

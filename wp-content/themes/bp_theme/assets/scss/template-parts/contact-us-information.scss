@@ -1,0 +1,236 @@
+.contact-us-information {
+    padding: 0;
+    background: linear-gradient(to right, white 0%, white 50%, #1f3a24 50%, #1f3a24 100%);
+    border-bottom: 1px solid var(--white);
+
+    &__holder {
+        display: flex;
+
+        &--content {
+            width: 50%;
+            padding: 96px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+
+            .contact-us-information__items {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                &--item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 5px;
+
+                    span {
+                        color: var(--black_60);
+                    }
+                }
+            }
+        }
+
+        &--titles {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .body_one_regular {
+                color: var(--black_60);
+            }
+        }
+
+        &--form {
+            width: 50%;
+
+            .wpcf7-form {
+                padding: 96px 0 96px 72px;
+                color: var(--white);
+
+                h2 {
+                    margin-bottom: 48px;
+                }
+
+                .double-input p {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 24px;
+
+                    input {
+                        border: unset;
+                        padding: 10px 0;
+                        border-bottom: 1px solid var(--white);
+                        background-color: transparent;
+                        color: var(--white);
+                        width: auto;
+
+                        &::placeholder {
+                            color: var(--white);
+                            font-family: "Mulish";
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 0%;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .single-input p {
+                    input {
+                        border: unset;
+                        padding: 10px 0;
+                        border-bottom: 1px solid var(--white);
+                        background-color: transparent;
+                        color: var(--white);
+                        width: -webkit-fill-available;
+
+                        &::placeholder {
+                            color: var(--white);
+                            padding: 10px;
+                            font-family: "Mulish";
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 120%;
+                            letter-spacing: 0%;
+                        }
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    padding: 10px 0;
+                    height: 150px;
+                    background-color: transparent;
+                    border: unset;
+                    border-bottom: 1px solid var(--white);
+                    color: var(--white);
+
+                    &::placeholder {
+                        color: var(--white);
+                        font-family: "Mulish";
+                        padding: 0 10px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 120%;
+                        letter-spacing: 0%;
+                    }
+                }
+
+                span.wpcf7-list-item {
+                    margin: 0;
+                    font-family: "Mulish";
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                input.wpcf7-form-control.wpcf7-submit.has-spinner {
+                    width: 100%;
+                    padding: 18px;
+                    border-radius: 4px;
+                    margin-top: 24px;
+                    font-family: "Mulish";
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .contact-us-information {
+        &__holder--form {
+            .wpcf7-form {
+                .double-input {
+                    p {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: unset;
+
+                        input {
+                            width: -webkit-fill-available;
+                        }
+                    }
+                }
+
+                .wpcf7-form-control-wrap {
+                    position: relative;
+                    width: 49%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .contact-us-information {
+        background: linear-gradient(to bottom, #fff, #fff 50%, #1f3a24 50%, #1f3a24);
+
+        &__holder {
+            display: flex;
+            flex-direction: column;
+
+            &--content {
+                width: 100%;
+                padding: 64px 0;
+                gap: 36px;
+            }
+
+            &--form {
+                width: 100%;
+
+                .wpcf7-form {
+                    padding: 0px 20px;
+
+                    h2 {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-us-information {
+        background: linear-gradient(to bottom, #fff, #fff 45%, #1f3a24 45%, #1f3a24);
+
+        &__holder {
+            &--form {
+                .wpcf7-form {
+                    padding: 0;
+
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+
+                    .double-input {
+                        p {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: unset;
+                            flex-direction: column;
+                        }
+                    }
+
+                    .wpcf7-form-control-wrap {
+                        width: 100%;
+                        margin: 1em 0;
+                    }
+                }
+            }
+
+            &--content {
+                .contact-us-information {
+                    &__items {
+                        &--item {
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

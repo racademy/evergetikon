@@ -1,0 +1,137 @@
+/* Side cart */
+
+.woofc-count {
+    width: 48px;
+    height: 48px;
+    border-radius: 50% !important;
+    display: flex !important;
+    line-height: 60px;
+    text-align: center;
+    background-color: #c4a45f;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        color: var(--white);
+        font-size: 20px;
+    }
+}
+
+.woofc-count.woofc-count-bottom-right {
+    right: 30px;
+}
+
+.woofc-area-bot {
+    display: flex;
+    flex-direction: column;
+}
+
+.woofc-free-shipping-bar.woofc-data {
+    order: 1;
+}
+
+.woofc-suggested {
+    order: 2;
+    .woofc-suggested-products {
+        border-bottom: 1px solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        padding-bottom: 10px;
+    }
+}
+
+.woofc-total.woofc-data {
+    order: 3;
+    margin-top: 40px !important;
+}
+
+.woofc-action {
+    order: 4;
+}
+
+.woofc-continue {
+    order: 5;
+}
+
+span.woofc-item-title {
+    font-weight: 400 !important;
+    line-height: 120%;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+span.woofc-item-price bdi {
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 160%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.woofc-area.woofc-style-02
+    .woofc-area-mid
+    .woofc-item
+    .woofc-item-inner
+    .woofc-item-qty
+    .woofc-item-qty-inner
+    .woofc-item-qty-plus,
+.woofc-area.woofc-style-02
+    .woofc-area-mid
+    .woofc-item
+    .woofc-item-inner
+    .woofc-item-qty
+    .woofc-item-qty-inner
+    .woofc-item-qty-minus,
+.woofc-area.woofc-style-02
+    .woofc-area-mid
+    .woofc-item
+    .woofc-item-inner
+    .woofc-item-qty
+    .woofc-item-qty-inner
+    .woofc-item-qty-individual {
+    background-color: #f6f4ef;
+}
+
+.woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner .woofc-item-qty .woofc-item-qty-inner input {
+    background-color: #f6f4ef;
+}
+
+a.woofc-action-checkout {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    font-size: 14px;
+    border-width: 1px !important;
+
+    &:hover {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+}
+
+span.woofc-continue-url {
+    width: 100%;
+    display: block;
+    border: 1px solid;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: #000 !important;
+        color: #fff !important;
+        opacity: 1 !important;
+    }
+}
+
+.woofc-total.woofc-data {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
